@@ -18,26 +18,16 @@ const pricingData = [
 
 export default function Pricing() {
   return (
-    <div className="bg-gray-50 min-h-screen pb-20">
-      {/* Header */}
-      <section className="bg-blue-600 py-16 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold mb-4"
-          >
-            Transparent Pricing
-          </motion.h1>
-          <p className="text-blue-100 text-lg max-w-2xl mx-auto">
-            Affordable and competitive rates for all your Digital Signature needs.
-          </p>
-        </div>
-      </section>
-
-      {/* Pricing Grid */}
-      <section className="py-16">
+    <div id="pricing" className="bg-gray-50 pt-20 pb-20">
+      {/* Content */}
+      <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Transparent Pricing</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Affordable and competitive rates for all your Digital Signature needs.
+            </p>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {pricingData.map((item, index) => (
               <motion.div 

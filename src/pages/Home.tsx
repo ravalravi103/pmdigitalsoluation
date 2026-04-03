@@ -22,24 +22,24 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div id="home" className="flex flex-col">
       {/* Hero Section */}
       <section className="relative bg-blue-600 text-white py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
         </div>
-
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <motion.h1
+            <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6"
             >
               PM DIGITAL SOLUTION
             </motion.h1>
-            <motion.p
+            <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
@@ -47,19 +47,24 @@ export default function Home() {
             >
               Trusted Digital Signature Certificate (DSC) Services in Mumbai
             </motion.p>
-            <motion.div
+            <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
               className="flex flex-col sm:flex-row justify-center gap-4"
             >
-
-              <Link
-                to="/pricing"
+              <a 
+                href="tel:8655595866"
+                className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all shadow-lg flex items-center justify-center"
+              >
+                Call Now <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a 
+                href="#pricing"
                 className="bg-blue-700 text-white border border-blue-500 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition-all flex items-center justify-center"
               >
                 View Pricing
-              </Link>
+              </a>
             </motion.div>
             <div className="mt-12 flex flex-wrap justify-center gap-6 text-blue-100 text-sm font-medium">
               <span className="flex items-center"><CheckCircle2 className="h-4 w-4 mr-2 text-white" /> Fast Processing</span>
@@ -77,10 +82,10 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Specialized Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">We provide a comprehensive range of Digital Signature Certificates tailored to your specific needs.</p>
           </div>
-
+          
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <motion.div
+              <motion.div 
                 key={index}
                 whileHover={{ y: -5 }}
                 className="p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all"
@@ -135,9 +140,9 @@ export default function Home() {
             <div className="lg:w-1/2">
               <div className="relative">
                 <div className="absolute -inset-4 bg-blue-600/10 rounded-3xl blur-2xl"></div>
-                <img
-                  src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=800"
-                  alt="Professional Service"
+                <img 
+                  src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=800" 
+                  alt="Professional Service" 
                   className="relative rounded-2xl shadow-2xl w-full object-cover h-96"
                   referrerPolicy="no-referrer"
                 />
@@ -154,7 +159,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Here's what business owners and professionals in Mumbai think about our services.</p>
           </div>
-
+          
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -176,7 +181,7 @@ export default function Home() {
                 rating: 5
               }
             ].map((review, index) => (
-              <motion.div
+              <motion.div 
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -217,20 +222,20 @@ export default function Home() {
               Join hundreds of satisfied clients in Mumbai who trust PM Digital Solution for their digital authentication needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
-              <a
-                href="https://wa.me/918655595866"
+              <a 
+                href="https://wa.me/918655595866" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition-all flex items-center justify-center"
               >
                 Chat on WhatsApp
               </a>
-              <Link
-                to="/contact"
+              <a 
+                href="#contact"
                 className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all flex items-center justify-center"
               >
                 Contact Us
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -3,26 +3,16 @@ import { Shield, Award, Users, CheckCircle2 } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="bg-white">
-      {/* Header */}
-      <section className="bg-blue-600 py-16 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold mb-4"
-          >
-            About PM DIGITAL SOLUTION
-          </motion.h1>
-          <p className="text-blue-100 text-lg max-w-2xl mx-auto">
-            Your trusted partner for Digital Signature Certificates in Mumbai.
-          </p>
-        </div>
-      </section>
-
+    <div id="about" className="bg-white pt-20">
       {/* Content */}
-      <section className="py-20">
+      <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">About PM DIGITAL SOLUTION</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Your trusted partner for Digital Signature Certificates in Mumbai.
+            </p>
+          </div>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
@@ -32,7 +22,7 @@ export default function About() {
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
                 Managed by Sumit Raval, we pride ourselves on our personalized service and technical expertise. We don't just sell certificates; we provide end-to-end support to ensure you can use your DSC effectively for e-tendering, MCA filings, Income Tax, and more.
               </p>
-
+              
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-center space-x-3">
                   <div className="bg-blue-100 p-2 rounded-full">
@@ -60,7 +50,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-
+            
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="bg-blue-50 p-8 rounded-2xl text-center">
@@ -96,9 +86,9 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center gap-12">
             <div className="w-48 h-48 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 overflow-hidden">
-              <img
-                src="/sumit_profile_pic.png"
-                alt="Sumit Raval"
+               <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400" 
+                alt="Sumit Raval" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
