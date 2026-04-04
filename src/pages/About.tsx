@@ -22,7 +22,7 @@ export default function About() {
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
                 Managed by Sumit Raval, we pride ourselves on our personalized service and technical expertise. We don't just sell certificates; we provide end-to-end support to ensure you can use your DSC effectively for e-tendering, MCA filings, Income Tax, and more.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-center space-x-3">
                   <div className="bg-blue-100 p-2 rounded-full">
@@ -50,7 +50,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="bg-blue-50 p-8 rounded-2xl text-center">
@@ -86,9 +86,9 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center gap-12">
             <div className="w-48 h-48 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 overflow-hidden">
-               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400" 
-                alt="Sumit Raval" 
+              <img
+                src="sumit_profile_pic.png"
+                alt="Sumit Raval"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
